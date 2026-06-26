@@ -1,6 +1,6 @@
 import React from 'react';
 import SoftAurora from './components/SoftAurora';
-import { Zap, Lock, Cpu} from "lucide-react";
+import { Zap, Lock, Cpu, Monitor, HardDrive} from "lucide-react";
 import AnimatedContent from './components/AnimatedContent';
 
 function App() {
@@ -221,6 +221,58 @@ function App() {
                     </AnimatedContent>
                 </div>
             </div>
+            {/* System Requirements */}
+            <div style={{
+                position: 'relative',
+                zIndex: 1,
+                padding: '96px 24px',
+                maxWidth: '1280px',
+                margin: '0 auto'
+            }}>
+                <h2 style={{
+                    fontSize: '36px',
+                    fontWeight: 'bold',
+                    color: 'white',
+                    marginBottom: '32px',
+                    textAlign: 'center'
+                }}>
+                    System Requirements
+                </h2>
+                <AnimatedContent direction="vertical" distance={30} duration={0.8} delay={0}>
+                    <div style={{
+                        backgroundColor: 'rgba(255,255,255,0.05)',
+                        backdropFilter: 'blur(10px)',
+                        borderRadius: '16px',
+                        padding: '32px',
+                        border: '1px solid rgba(255,255,255,0.1)'
+                    }}>
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '24px' }}>
+                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', textAlign: 'center' }}>
+                                <Monitor style={{ color: '#cba6f7' }} size={32} />
+                                <div>
+                                    <h4 style={{ color: 'white', fontSize: '18px', fontWeight: '600', marginBottom: '4px' }}>Operating System</h4>
+                                    <p style={{ color: '#d1d5db', fontSize: '14px' }}>macOS 11.0 (Big Sur) or later</p>
+                                </div>
+                            </div>
+                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', textAlign: 'center' }}>
+                                <Cpu style={{ color: '#cba6f7' }} size={32} />
+                                <div>
+                                    <h4 style={{ color: 'white', fontSize: '18px', fontWeight: '600', marginBottom: '4px' }}>Architecture</h4>
+                                    <p style={{ color: '#d1d5db', fontSize: '14px' }}>Intel (x86_64) or Apple Silicon (arm64)</p>
+                                </div>
+                            </div>
+                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', textAlign: 'center' }}>
+                                <HardDrive style={{ color: '#cba6f7' }} size={32} />
+                                <div>
+                                    <h4 style={{ color: 'white', fontSize: '18px', fontWeight: '600', marginBottom: '4px' }}>Storage</h4>
+                                    <p style={{ color: '#d1d5db', fontSize: '14px' }}>50 MB free disk space</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </AnimatedContent>
+            </div>
+
         </div>
     )
 }
