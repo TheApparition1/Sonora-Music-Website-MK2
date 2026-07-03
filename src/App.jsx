@@ -1,21 +1,8 @@
-import React from 'react';
 import SoftAurora from './components/SoftAurora';
 import {Zap, Lock, Cpu, Monitor, HardDrive, UserStar, AppWindowMac, GitPullRequestCreate} from "lucide-react";
 import AnimatedContent from './components/AnimatedContent';
 
-function App(style = {
-    display: 'inline-flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: '12px',
-    backgroundColor: '#cba6f7',
-    padding: '16px 32px',
-    fontSize: '18px',
-    fontWeight: '600',
-    color: '#1e1e2e',
-    textDecoration: 'none',
-    transition: 'backgroundColor 0.3s, transform 0.2s'
-}) {
+function App() {
     return (
         <div style={{position: 'relative', minHeight: '100vh', overflow: 'hidden'}}>
             {/* Solid background color */}
@@ -93,12 +80,36 @@ function App(style = {
                     A simple macOS native music player for your local files.
                     Windows Support is currently being considered.
                 </p>
-                <a
-                    href="https://github.com/TheApparition1/Sonora-Music/releases/download/V1.0.0/Sonora.1.0.-.Apple.Silicon.dmg"
-                    style={style}
+                <button
+                    onClick={() => {
+                        const link = document.createElement('a');
+                        link.href = "https://github.com/TheApparition1/Sonora-Music/releases/download/V1.0.0/Sonora.1.0.-.Apple.Silicon.dmg";
+                        link.download = "Sonora.1.0.-.Apple.Silicon.dmg";
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                    }}
+                    style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        borderRadius: '12px',
+                        backgroundColor: '#cba6f7',
+                        padding: '16px 32px',
+                        fontSize: '18px',
+                        fontWeight: '600',
+                        color: '#1e1e2e',
+                        textDecoration: 'none',
+                        transition: 'backgroundColor 0.3s, transform 0.2s',
+                        border: 'none',
+                        cursor: 'pointer',
+                        fontFamily: 'inherit',
+                        outline: 'none',
+                        background: '#cba6f7'
+                    }}
                 >
                     Download for macOS
-                </a>
+                </button>
             </div>
 
             {/* Info Section */}

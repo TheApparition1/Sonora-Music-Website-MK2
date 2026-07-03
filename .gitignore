@@ -1,3 +1,22 @@
-/node_modules
-/.idea
-/.vscode
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Cloudflare Wrangler
+.wrangler/
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+
+# Environment variables
+.env*
+!.env.example
+
+# IDE garbage
+.idea/
+.vscode/
+
+# OS junk
+.DS_Store
