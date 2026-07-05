@@ -4,6 +4,7 @@ import SoftAurora from './components/SoftAurora';
 import {Zap, Lock, Cpu, Monitor, HardDrive, UserStar, AppWindowMac, GitPullRequestCreate} from "lucide-react";
 import AnimatedContent from './components/AnimatedContent';
 import DownloadArchive from './components/DownloadArchive';
+import Footer from './components/Footer';
 
 function AppWrapper() {
     const location = useLocation();
@@ -490,6 +491,7 @@ function AppWrapper() {
                             </div>
 
                         </div>
+                        <Footer />
                     </div>
                 } />
                 <Route path="/archive" element={<DownloadArchive />} />

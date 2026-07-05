@@ -1,6 +1,7 @@
 import { Download, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SoftAurora from './SoftAurora';
+import Footer from './Footer';
 
 const releases = [
     {
@@ -155,6 +156,7 @@ function DownloadArchive() {
                     ← Back to Home
                 </Link>
             </div>
+            <Footer />
             </div>
         </div>
     );
