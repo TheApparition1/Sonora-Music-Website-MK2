@@ -1,16 +1,45 @@
-# React + Vite
+# Sonora Music - Website 🎵
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hey! This is my music website project. I built it with React and it's hosted on Cloudflare Workers. Pretty cool stuff.
 
-Currently, two official plugins are available:
+## What I Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** - For the UI
+- **Vite** - Makes building way faster
+- **Cloudflare Workers** - Where it's hosted
 
-## React Compiler
+## Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+src/
+├── components/     # My React components
+├── App.jsx         # Main app file
+└── index.css       # Global styles
+public/             # Images and stuff
+```
 
-## Expanding the ESLint configuration
+## AI Help
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+I used some AI tools to help me out:
+- **GitHub Copilot** - Helped fix bugs (I checked everything before adding it though!)
+- **Cascade Code** - Autocomplete and autocorrect
+
+## FAQ
+
+**Why did you make a separate GitHub repository?**
+Mostly because I wanted to keep the website code seperate from the actual macOS code.
+
+**What's the point of this website?**
+It's to have a nice website to show off my project - Sonora Music. It's a fully native macOS Music Player.
+
+**How long did it take to build?**
+Around 6ish hours, I'm very proficient in React and used a few elements from reactbits.
+
+**Can I use this code?**
+Go Ahead! However, please credit me, and abide by the GPL v3.0 license.
+
+**Why Cloudflare Workers?**
+Because I use them to host all of my other projects and my domain, so it's the easiest for me to work with.
+
+**What are you planning to add next?**
+Most likely a 3 band EQ, some more themes, and a playlist view, so adding playlists of course.
