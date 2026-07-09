@@ -27,7 +27,7 @@ function Footer() {
                     justifyContent: 'center'
                 }}>
                     <a
-                        href="https://github.com/TheApparition1"
+                        href="https://github.com/TheApparition1/Sonora-Music-Website"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{
