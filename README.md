@@ -8,6 +8,7 @@ This is a Website for Sonora Music, my macOS Native Music Player.
 - **Hosting and Deployment:** Cloudflare Workers
 - **Downloads:** GitHub UserContent Links (soon to be replaced with CloudFlare R2 Storage)
 
+
 ## AI Usage
 
 I used Cascade Code by Windsurf to give me line autocomplete, and GitHub Copilot to help with bugfixing.
@@ -28,6 +29,10 @@ npm run dev
 ### Why are you migrating to CloudFlare R2?
 
 It's a lot faster, and is automatable so anytime I push a new release I can have the website update.
+
+### Why the Aurora BG Effect
+
+I honestly chose it because it looks pretty and has pastel colors that are pretty to me.
 
 ### Why are you using GSAP for animations?
 
